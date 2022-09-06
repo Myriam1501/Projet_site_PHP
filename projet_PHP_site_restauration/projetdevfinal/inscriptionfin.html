@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, intiale-scale=1.0">
+		<title>JINISS-ASIANFOOD</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="circle.css">
+	    <script type="text/javascript" src="js/java1.js"></script>
+	</head>
+	<body>
+		<div class="preloader">
+			<span class="loader"></span>
+		</div>
+		<nav class="liens_menu" id="liens_menu">
+			<a href="accueil_version2.html" class="logo">Jiniss</a>
+			<input type="checkbox" id="icon">
+			<label for="icon">
+				<i  class="fa fa-bars" id="barres"></i>
+				<i  class="fa fa-times" id="cancel"></i>
+			</label>
+			<ul>
+        		<li class="menu-items"><a href="menu.php">Menu</a></li>
+		    	<li class="menu-items"><a href="presentation.html">Présentation</a></li>
+				<li class="menu-items"><a href="reservation.html">Réserver</a></li>
+				<li class="menu-items"><a href="commandefin.php"><span class="fa fa-shopping-basket"></span></a></li>
+			</ul>
+		</nav>
+		<header class="header_inscr">
+        	<p>Inscrivez vous dès maintenant et profitez de 20% de réduction sur votre première commande</p>
+			<h4>RESTAURANT ASIAN-FUSION</h4>
+		</header>	
+        <form class="form" action="inscriptionfin.php" method="post">
+        	<h1>Mes informations</h1>
+        	<h3>Complétez vos informations personnelles pour créer votre compte. Tous les champs sont obligatoires.</h3>
+			<div>
+				<label for="user">Nom d'utilisateur*</label>
+				<input type="text" id="user" name="user" placeholder="xx"  required>
+			</div>
+			<div>
+				<label for="pays">Pays*</label>
+				<input type="text" id="pays" name="pays" placeholder="France" required>
+		    </div>
+			<div>
+				<label for="adresse">Adresse Postale*</label>
+				<textarea rowls="3" cols="20"  id="adresse" name="adresse" placeholder="xx avenue de la xx" required></textarea>
+			</div>
+			<div>
+				<label for="codepostal">Code Postal*</label>
+				<textarea rowls="3" cols="20"  id="codepostal" name="codepostal" placeholder="75001 Paris" required></textarea>
+			</div>
+			<div>
+					<label for="mdp">Mot de passe*</label>
+					<input type="text" id="mdp" name="mdp" placeholder="@2345" required>
+			</div>
+			<div>
+					<label for="mdpConfirmation">Confirmation mot de passe*</label>
+					<input type="text" id="mdpConfirmation" name="mdpConfirmation" placeholder="@2345" required>
+			</div>
+				<button type="submit" name="inscription" value="Créer un compte">Créer un compte</button>
+		</form>
+        <footer>
+		<div class="footer_content">
+			    <h2>JINISS</h2>
+	        		<a href="https://www.google.com/maps/place/140+Rue+de+Vaugirard,+75015+Paris/@48.8447698,2.3163806,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67032f9dbfcb7:0xf8a08628a40abd37!8m2!3d48.8447698!4d2.3185693" class="links">140 rue Vaugirard 75015 Paris</a>	        	
+	        		<a href="tel:+33900000000" class="links">09 36 48 85 23</a>	        	
+	        	    <a href="mailto:Jiniss.asianfood@gmail.com" class="links">Jiniss.asianfood@gmail.com</a>
+	        		<p>LUNDI DU SAMEDI</p>
+	        		<p>11H-15H ET 18H-23H</p>
+	        		
+            		<a href="reservation.html" class="links">Réservation</a>
+            	    
+            	<ul class="socials">
+            		<a href="#"><i class="fa fa-facebook-square"></i></a>
+			    	<a href="#"><i class="fa fa-instagram"></i></a>
+					<a href="#"><i class="fa fa-envelope"></i></a>
+					<a href="#"><i class="fa fa-linkedin"></i></a>
+				</ul>
+	    </div>           	
+    </footer>
+    </body>
+</html>

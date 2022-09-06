@@ -1,0 +1,45 @@
+<!--OUNISSI , CHEN , BAYO  -->
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, intiale-scale=1.0">
+		<title>JINISS-ASIANFOOD</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+		<link rel="stylesheet" type="text/css" href="CSS/styles_version2.2.css">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" type="text/css" href="CSS/connection_account.css">
+	    <script type="text/javascript" src="js/java1.js"></script>
+	</head>
+	<body>
+		<nav class="liens_menu" id="liens_menu">
+			<a href="accueil_version2.html" class="logo">Jiniss</a>
+			<input type="checkbox" id="icon">
+			<label for="icon">
+				<i  class="fa fa-bars" id="barres"></i>
+				<i  class="fa fa-times" id="cancel"></i>
+			</label>
+			<ul>
+        		<li class="menu-items"><a href="menu.php">Menu</a></li>
+		    	<li class="menu-items"><a href="presentation.html">Présentation</a></li>
+				<li class="menu-items"><a href="reservation.html">Réserver</a></li>
+				<li class="menu-items"><a href="commandefin.html"><span class="fa fa-shopping-basket"></span></a></li>
+			</ul>
+		</nav>
+		<form action="commandefin.php" action="post" class="conection-account">
+			<h1 class="gros-titre"><i class="fa fa-lock"></i>Paiement sécurisé</h1>
+			<fieldset>
+			<div class="inputs">
+				<input type="user" name="user" placeholder="Nom d'utilisateur"required>
+				<input type="password" name="mdp" placeholder="Mot de passe" required>
+			</div>
+			<div align=center>
+				<button type="submit" name="connection" value="Connection">Connexion</button>
+			</div>
+			<p>Pas encore de compte ? <a href="inscriptionfin.html">S'inscrire</a></p>
+			
+			</fieldset>
+	    </form>
+    </body>
+</html>

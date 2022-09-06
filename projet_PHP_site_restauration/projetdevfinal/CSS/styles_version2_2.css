@@ -1,0 +1,284 @@
+/* OUNISSI , CHEN , BAYO */ 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Playfair+Display:wght@600&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+	box-sizing: border-box;
+}
+
+
+body{
+	background: #303030;
+	font-family: 'Montserrat', sans serif;
+	display: flex;
+	justify-content: center;
+	color: #2f2015;
+	position: relative;
+}
+
+
+/********************header*/
+
+nav.liens_menu{
+	width:100%;
+	padding:10px;
+	position: fixed;
+	box-shadow: 0 0 20px 0 rgb(0 0 0 / 4%);
+	background-color:white;
+	top:0px;
+	transition:.5s;
+}
+
+nav.liens_menu ul{
+	float: right;
+	margin-right: 25px;
+}
+
+nav.liens_menu ul li.menu-items{
+	display: inline-block;
+	line-height: 80px;
+	margin: 0 15px;
+}
+
+nav.liens_menu ul li.menu-items a{
+	position: relative;
+	color: black;
+	font-size: 17px;
+	transition: 1s;
+}
+
+nav.liens_menu ul li.menu-items a:hover{
+	color:#C1AB86;
+	border-bottom: 1px solid;
+}
+
+
+label #barres,
+label #cancel{
+	color:black;
+	font-size:30px;
+	float:right;
+	line-height: 80px;
+	margin-right: 40px;
+	cursor:pointer;
+	display:none;
+}
+
+#icon{
+	display: none;
+}
+
+
+@media (max-width: 944px){
+    nav.liens_menu ul li.menu-items a{
+		font-size: 17px;
+	}
+}
+
+@media (max-width: 860px){
+	label #barres{
+		display:block;
+	}
+    
+    ul{
+		position: fixed;
+		width: 100%;
+		height: 100vh;
+		background: #363636;
+		top: 100px;
+		left:-100%;
+		text-align: center;
+		transition: all .5s;
+	}
+
+	nav.liens_menu ul li.menu-items{
+		display: block;
+		margin: 50px 0;
+		line-height: 30px;
+	}
+	nav.liens_menu ul li.menu-items a{
+		font-size: 20px;
+		color:white;
+	}
+
+	nav.liens_menu ul li.menu-items a:hover{
+	color: #C1AB86;
+    }
+
+	#icon:checked ~ ul{
+		left: 0;
+	}
+	#icon:checked ~ label #barres{
+		display:none;
+	}
+	#icon:checked ~ label #cancel{
+		display:block;
+	}
+}
+
+.logo{
+	color:black;
+	font-family: 'Playfair Display',sans serif;
+	font-size:30px;
+	position: absolute;
+	left:100px;
+	top: 25px;
+}
+
+.link a:hover{
+	color:#C1AB86;
+	border-bottom: 1px solid;
+}
+
+@media screen and (max-width: 680px){
+	nav .link{
+		margin-left:0;
+		margin-bottom: 20px;
+	}
+}
+
+/***************formulaire*****/
+.formulaire2{
+	width: 700px;
+	border: 1px solid;
+	border-radius: 4px;
+	padding: 50px 50px 50px 50px;
+	background: white;
+	margin-top:150px;
+	margin-bottom: 300px;
+}
+
+.formulaire2 > h1{
+	font-weight: 500;
+	padding-bottom:50px;
+}
+
+.formulaire2 > p{
+	font-weight: 300;
+}
+
+form div {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	min-height: 60px;
+	margin-top:  20px;
+}
+
+form div > label{
+	margin-bottom: 7px;
+	font-weight: 600;
+}
+
+form div > input, form div > select, form div > textarea{
+	background: #303030;
+	border: none;
+	border-radius: 4px;
+	font-size: 18px;
+	font-weight: 500;
+	font-family: monospace;
+	color:white;
+}
+
+form div > input, form div > select{
+	height: :50px;
+	padding-left: 15px;
+}
+
+form div > textarea{
+	height: 40px;
+	padding: 15px 0px 0px 10px;
+}
+
+form div > input::placeholder, form div > textarea::placeholder {
+	color: white;
+}
+
+form div > select:invalid{
+	color: white;
+}
+
+form div:last-child {
+	align-items:center;
+	margin-top: 30px;
+}
+
+.button1{
+	border-radius: 4px;
+	color: white;
+	margin-left: 35%;
+	width: 200px;
+	max-width: 500px;
+	height: 20px;
+	font-weight: 700;
+	font-size: 16px;
+	background: #303030;
+}
+.button2{
+	border-radius: 4px;
+	color:  white;
+	margin-left: 35%;
+	width: 200px;
+	max-width: 500px;
+	height: 20px;
+	font-weight: 700;
+	font-size: 16px;
+	background: #303030;
+}
+
+
+
+/*******************footer content*/
+footer{
+	background:#303030;
+	height: 250px;
+	width: 100%;
+	font-family: "Open Sans";
+    padding-top: 40px;
+    padding-bottom: 40px;
+	bottom: 0px;
+	position:absolute;
+}
+
+.footer_content{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	color: white;
+}
+
+.footer_content .box{
+	flex-basis:50%;
+	padding:10px 20px;
+	color: white;
+	box-sizing: border-box;
+}
+
+a.links{
+	padding-left: 10px;
+	color: white;
+}
+
+a.links:hover{
+	padding-left: 10px;
+	color: #C1AB86;
+}
+
+.socials a{
+	color: white;
+}
+
+.socials a:hover{
+	color:#C1AB86 ;
+}
+
+.socials i{
+	width:40px;
+	margin: 10px 10px;
+	font-size: 25px;
+}

@@ -1,0 +1,137 @@
+<!--OUNISSI , CHEN , BAYO  -->
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width-device-width, intiale-scale=1.0">
+		<title>JINISS-ASIANFOOD</title>
+		<meta charset="utf-8"/>
+		<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+		<link rel="stylesheet" type="text/css" href="CSS/styles_version2_2.css">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <script type="text/javascript" src="js/java1.js"></script>
+	</head>
+	<body>
+		<nav class="liens_menu" id="liens_menu">
+			<a href="accueil_version2.html" class="logo">Jiniss</a>
+			<input type="checkbox" id="icon">
+			<label for="icon">
+				<i  class="fa fa-bars" id="barres"></i>
+				<i  class="fa fa-times" id="cancel"></i>
+			</label>
+			<ul>
+        		<li class="menu-items"><a href="menu.php">Menu</a></li>
+		    	<li class="menu-items"><a href="presentation.html">Présentation</a></li>
+				<li class="menu-items"><a href="reservation.html">Réserver</a></li>
+				<li class="menu-items"><a href="commandefin.html"><span class="fa fa-shopping-basket"></span></a></li>
+			</ul>
+		</nav>
+		<div class="formulaire2">
+				<h1>Formulaire de réservation</h1>
+				<p>Pour tout problème ou question n'hésitez pas à nous conctacter par téléphone au 0936488523, par mail ou sur nos réseaux sociaux, se trouvant en bas de page.</p>
+				<form name="form" action="inscription.php" method="post">
+					
+					<div>
+						<label for="nom">Nom*</label>
+						<input type="text" id="nom" name="nom" placeholder="xx"required>
+					</div>
+					<div>
+						<label for="prenom">Prénom*</label>
+						<input type="text" id="prenom" name="prenom" placeholder="xx" required>
+					</div>
+					<div>
+						<label for="pays">Pays*</label>
+						<input type="text" id="pays" name="pays" placeholder="France" required>
+					</div>
+					<div>
+						<label for="adresspostal">Adresse Postale*</label>
+						<textarea rowls="3" cols="20"  id="adresse" name="adresse" placeholder="xx avenue de la xx" required></textarea>
+					</div>
+					<div>
+						<label for="codepostal">Code Postal*</label>
+						<textarea rowls="3" cols="20"  id="codepostal" name="codepostal" placeholder="75001 Paris" required></textarea>
+					</div>
+					<div>
+						<label for="nbreservation">Nombre de réservation*</label>
+						<select name="nbreservation" id="nbreservation" required>
+							<option  value="" disabled selected hidden>Choisissez le nombre de réservation</option>
+							<option value="1">1</option>
+							<option value="2">2</option>
+							<option value="3">3</option>
+							<option value="4">4</option>
+							<option value="5">5</option>
+							<option value="6">6</option>
+							<option value="7">7</option>
+							<option value="8">8</option>
+							<option value="9">9</option>
+							<option value="10">10</option>
+							<option value="11">11</option>
+							<option value="12">12</option>
+							<option value="13">13</option>
+							<option value="14">14</option>
+							<option value="15">15</option>
+							<option value="16">16</option>
+							<option value="17">17</option>
+							<option value="18">18</option>
+							<option value="19">19</option>
+							<option value="20">20</option>
+							<option value="21">21</option>
+							<option value="22">22</option>
+							<option value="23">23</option>
+							<option value="24">24</option>
+							<option value="25">25</option>
+							<option value="26">26</option>
+							<option value="27">27</option>
+							<option value="28">28</option>
+							<option value="29">29</option>
+							<option value="30">30</option>
+							<option value="31">31</option>
+							<option value="32">32</option>
+							<option value="33">33</option>
+							<option value="34">34</option>
+							<option value="35">35</option>
+						</select>
+					</div>
+					<div>
+						<label for="mail">Mail*</label>
+						<textarea rowls="3" cols="20" id="mail" name="mail" placeholder="xx@xx.xx" required></textarea>
+					</div>
+					<div>
+						<label for="telephone">Téléphone*</label>
+						<input type="text" id="telephone" name="telephone" placeholder="0x xx xx xx xx">
+					</div>
+					<div>
+						<label for="Demande*">Demande*</label>
+						<textarea rowls="3" cols="20"  id="demande" name="demande" placeholder="xx" required></textarea>
+					</div>
+					<br><br>
+
+				
+				<input  class="button1" name="annuler" type="reset" value="Annuler"/>
+				<input  class="button1" name="inscrire" type="submit" value="S'inscrire" >
+				<!-- onClick="inscrire()" -->
+				
+				</form>
+				
+			</div>
+			<footer>
+			<div class="footer_content">
+				    <h2>JINISS</h2>
+		        		<a href="https://www.google.com/maps/place/140+Rue+de+Vaugirard,+75015+Paris/@48.8447698,2.3163806,17z/data=!3m1!4b1!4m5!3m4!1s0x47e67032f9dbfcb7:0xf8a08628a40abd37!8m2!3d48.8447698!4d2.3185693" class="links">140 rue Vaugirard 75015 Paris</a>	        	
+		        		<a href="tel:+33900000000" class="links">09 36 48 85 23</a>	        	
+		        	    <a href="mailto:Jiniss.asianfood@gmail.com" class="links">Jiniss.asianfood@gmail.com</a>
+		        		<p>LUNDI DU SAMEDI</p>
+		        		<p>11H-15H ET 18H-23H</p>
+		        		
+	            		<a href="reservation.html" class="links">Réservation</a>
+	            	    
+	            	<ul class="socials">
+	            		<a href="#"><i class="fa fa-facebook-square"></i></a>
+				    	<a href="#"><i class="fa fa-instagram"></i></a>
+						<a href="#"><i class="fa fa-envelope"></i></a>
+						<a href="#"><i class="fa fa-linkedin"></i></a>
+					</ul>
+		    </div>           	
+	    </footer>
+	    </body>
+	</html>
